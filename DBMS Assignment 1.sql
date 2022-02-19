@@ -8,16 +8,13 @@ create table passenger(
 	Boarding_City varchar(20),
 	Destination_City varchar(20),
 	Distance int,
-	Bus_Type varchar(20),
-      FOREIGN KEY (Bus_type) REFERENCES Price(Bus_type),
-      FOREIGN KEY (Distance) REFERENCES Price(Distance)
+	Bus_Type varchar(20)
 );
 create table PRICE
 (
  Bus_Type varchar(20) ,
  Distance int ,
- Price int,
- CONSTRAINT PK_price PRIMARY KEY (Bus_type,Distance)
+ Price int
  );
 
 -- 2) Insert the following data in the tables
