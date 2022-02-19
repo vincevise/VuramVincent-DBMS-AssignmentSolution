@@ -1,6 +1,6 @@
 create database TravelOnTheGo;
 use TravelOnTheGo;
--- 1)
+-- 1) You are required to create two tables PASSENGER and PRICE with the following attributes and properties
 create table passenger(
 	Passenger_name varchar(20) not null primary key,
 	Category varchar(20),
@@ -20,7 +20,7 @@ create table PRICE
  CONSTRAINT PK_price PRIMARY KEY (Bus_type,Distance)
  );
 
--- 2)
+-- 2) Insert the following data in the tables
 insert into passenger values ('Sejal','AC', 'F', 'Bengaluru', 'Chennai', 350 ,'Sleeper');
 insert into passenger values ('Anmol', 'Non-AC' ,'M' ,'Mumbai', 'Hyderabad', 700, 'Sitting');
 insert into passenger values ('Pallavi', 'AC', 'F', 'Panaji', 'Bengaluru', 600, 'Sleeper');
