@@ -43,8 +43,7 @@ insert into price values ('Sitting', 1200, 1488);
 insert into price values ('Sitting', 1500, 1860);
 
 -- 3) How many females and how many male passengers travelled for a minimum distance of 600 KM s?
-select gender,count(gender) from passenger,price where passenger.distance >= 600 and passenger.distance = price.distance  group by gender;
-
+select gender,count(gender) from passenger where  distance >= 600 group by gender;
 
 -- 4) Find the minimum ticket price for Sleeper Bus. 
 select min(Price) from Price where Bus_Type = 'sleeper';
